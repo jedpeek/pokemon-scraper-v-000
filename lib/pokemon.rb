@@ -2,9 +2,9 @@ class Pokemon
   db = SQLite3::Database.new('db/pokemon.db')
   db.execute('db/schema_migration.sql')
   @@all = []
-  attr_accessor :name, :type
+  attr_accessor :name, :type, :db
 
-  def initialize(name, type, db = db)
+  def initialize(name, type, db )
     @name = name
     @type = type
     @@all << self
