@@ -4,7 +4,7 @@ class Pokemon
   @@all = []
   attr_accessor :name, :type
 
-  def initialize(name, type, db)
+  def initialize(name, type, db = db)
     @name = name
     @type = type
     @@all << self
