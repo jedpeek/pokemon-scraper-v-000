@@ -6,6 +6,8 @@ class Pokemon
   end
 
   def initialize(name:, type:, db:)
-    @id, @name, @type, @hp, @db = id, name, type, hp, db
+    @name = name
+    @type = type
+    @db =db
   end
 end
