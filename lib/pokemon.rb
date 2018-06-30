@@ -5,5 +5,6 @@ class Pokemon
     @name = name
     @type = type
     db = 'db/pokemon.db'
+  end
 
 end
