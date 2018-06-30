@@ -5,7 +5,7 @@ class Pokemon
     db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type)
   end
 
-  def initialize(id:, name:, type:, hp: nil, db:)
+  def initialize(name:, type:, db:)
     @id, @name, @type, @hp, @db = id, name, type, hp, db
   end
 end
