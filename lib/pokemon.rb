@@ -1,5 +1,5 @@
 class Pokemon
-  db =  SQLite3::Database.new('schema_migration.sql')
+  @@db =  SQLite3::Database.new('schema_migration.sql')
   @@all = []
   attr_accessor :name, :type
 
