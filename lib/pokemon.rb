@@ -1,10 +1,10 @@
 class Pokemon
   @@all = []
 
-  def initialize(name, type, db)
+  def initialize(name, type, SQLite3::Database.new('db/pokemon.db')
     @name = name
     @type = type
-    db = SQLite3::Database.new('db/pokemon.db')
+    db = 
   end
 
 end
