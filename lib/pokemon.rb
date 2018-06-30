@@ -6,6 +6,7 @@ class Pokemon
   def initialize(name, type, db)
     @name = name
     @type = type
+    db.execute('db/schema_migration.sql')
     @@all << self
   end
 
